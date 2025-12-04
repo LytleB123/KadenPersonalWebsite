@@ -3,8 +3,8 @@ import BlogCard from '@/components/BlogCard'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Blog - Kaden Lytle',
-  description: 'Thoughts on entrepreneurship, business strategy, innovation, and leadership from Kaden Lytle.',
+  title: "Blog - Kaden Lytle",
+  description: "Thoughts on entrepreneurship, business strategy, innovation, and leadership from Kaden Lytle.",
 }
 
 // In a real app, this would be fetched from a CMS or file system

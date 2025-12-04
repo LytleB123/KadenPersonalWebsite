@@ -3,8 +3,8 @@ import ImageGrid from '@/components/ImageGrid'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Photos - Kaden Lytle',
-  description: 'Photos from Kaden Lytle\'s journey in business, wake sports, and community leadership.',
+  title: "Photos - Kaden Lytle",
+  description: "Photos from Kaden Lytle's journey in business, wake sports, and community leadership.",
 }
 
 export default function PhotosPage() {

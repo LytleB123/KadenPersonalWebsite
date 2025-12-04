@@ -3,8 +3,8 @@ import CTAButton from '@/components/CTAButton'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About - Kaden Lytle',
-  description: 'Learn about Kaden Lytle\'s journey, values, and philosophy as an entrepreneur and business leader.',
+  title: "About - Kaden Lytle",
+  description: "Learn about Kaden Lytle's journey, values, and philosophy as an entrepreneur and business leader.",
 }
 
 export default function AboutPage() {

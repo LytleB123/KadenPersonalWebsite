@@ -5,9 +5,9 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Work & Projects - Kaden Lytle',
+  title: "Work & Projects - Kaden Lytle",
   description:
-    'Explore Kaden Lytle's work including Inlit AI, Board Bound Wake, TXST Wake Team leadership, and advisory roles.',
+    "Explore Kaden Lytle's work including Inlit AI, Board Bound Wake, TXST Wake Team leadership, and advisory roles.",
 }
 
 export default function WorkPage() {

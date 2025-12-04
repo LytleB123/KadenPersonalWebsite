@@ -3,8 +3,8 @@ import CTAButton from '@/components/CTAButton'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact - Kaden Lytle',
-  description: 'Get in touch with Kaden Lytle for business opportunities, collaborations, or inquiries.',
+  title: "Contact - Kaden Lytle",
+  description: "Get in touch with Kaden Lytle for business opportunities, collaborations, or inquiries.",
 }
 
 export default function ContactPage() {

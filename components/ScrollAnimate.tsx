@@ -84,7 +84,7 @@ export default function ScrollAnimate({
         visible: {
           ...variantConfig.visible,
           transition: {
-            ...variantConfig.visible.transition,
+            ...(variantConfig.visible as any).transition,
             duration,
             delay,
           },
@@ -95,7 +95,7 @@ export default function ScrollAnimate({
         visible: {
           ...variantConfig.visible,
           transition: {
-            ...variantConfig.visible.transition,
+            ...(variantConfig.visible as any).transition,
             delay,
           },
         },
