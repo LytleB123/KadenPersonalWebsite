@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1e40af;
+  --secondary: #0f172a;
+  --background: #f8fafc;
+  --accent: #10b981;
+  /* Dark theme colors */
+  --primary-black: #0A0A0A;
+  --secondary-dark: #111317;
+  --crimson: #9B1C1C;
+  --crimson-soft: #B91C1C;
+  --text-gray: #E5E7EB;
+  --haze-white: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-gray);
+  background: var(--primary-black);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .haze-overlay {
+    background-color: var(--haze-white);
+  }
+  
+  .transition-smooth {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@layer base {
+  * {
+    @apply transition-smooth;
+  }
+}
+
