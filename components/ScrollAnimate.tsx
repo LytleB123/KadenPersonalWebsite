@@ -18,7 +18,7 @@ const animationVariants: Record<string, Variants> = {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: [0.4, 0, 0.2, 1],
+        ease: 'linear',
       },
     },
   },
@@ -29,7 +29,7 @@ const animationVariants: Record<string, Variants> = {
       x: 0,
       transition: {
         duration: 0.5,
-        ease: [0.4, 0, 0.2, 1],
+        ease: 'linear',
       },
     },
   },
@@ -40,7 +40,7 @@ const animationVariants: Record<string, Variants> = {
       x: 0,
       transition: {
         duration: 0.5,
-        ease: [0.4, 0, 0.2, 1],
+        ease: 'linear',
       },
     },
   },
@@ -51,7 +51,7 @@ const animationVariants: Record<string, Variants> = {
       y: 0,
       transition: {
         duration: 0.5,
-        ease: [0.4, 0, 0.2, 1],
+        ease: 'linear',
       },
     },
   },
@@ -62,7 +62,7 @@ const animationVariants: Record<string, Variants> = {
       scale: 1,
       transition: {
         duration: 0.5,
-        ease: [0.4, 0, 0.2, 1],
+        ease: 'linear',
       },
     },
   },
