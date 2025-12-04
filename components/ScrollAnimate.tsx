@@ -13,7 +13,7 @@ interface ScrollAnimateProps {
 
 const animationVariants: Record<string, Variants> = {
   fadeIn: {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0.3 },
     visible: {
       opacity: 1,
       transition: {
@@ -23,7 +23,7 @@ const animationVariants: Record<string, Variants> = {
     },
   },
   slideLeft: {
-    hidden: { opacity: 0, x: -30 },
+    hidden: { opacity: 0.3, x: -30 },
     visible: {
       opacity: 1,
       x: 0,
@@ -34,7 +34,7 @@ const animationVariants: Record<string, Variants> = {
     },
   },
   slideRight: {
-    hidden: { opacity: 0, x: 30 },
+    hidden: { opacity: 0.3, x: 30 },
     visible: {
       opacity: 1,
       x: 0,
@@ -45,7 +45,7 @@ const animationVariants: Record<string, Variants> = {
     },
   },
   slideUp: {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0.3, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
@@ -56,7 +56,7 @@ const animationVariants: Record<string, Variants> = {
     },
   },
   scaleUp: {
-    hidden: { opacity: 0, scale: 0.95 },
+    hidden: { opacity: 0.3, scale: 0.95 },
     visible: {
       opacity: 1,
       scale: 1,
@@ -105,7 +105,7 @@ export default function ScrollAnimate({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true, amount: 0.1, margin: "-50px" }}
       variants={finalVariants}
       className={className}
     >
