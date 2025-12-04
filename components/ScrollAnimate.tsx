@@ -17,52 +17,52 @@ const animationVariants: Record<string, Variants> = {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.6,
-        ease: 'easeOut',
+        duration: 0.5,
+        ease: [0.4, 0, 0.2, 1],
       },
     },
   },
   slideLeft: {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, x: -30 },
     visible: {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.7,
-        ease: [0.25, 0.1, 0.25, 1],
+        duration: 0.5,
+        ease: [0.4, 0, 0.2, 1],
       },
     },
   },
   slideRight: {
-    hidden: { opacity: 0, x: 50 },
+    hidden: { opacity: 0, x: 30 },
     visible: {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.7,
-        ease: [0.25, 0.1, 0.25, 1],
+        duration: 0.5,
+        ease: [0.4, 0, 0.2, 1],
       },
     },
   },
   slideUp: {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.7,
-        ease: [0.25, 0.1, 0.25, 1],
+        duration: 0.5,
+        ease: [0.4, 0, 0.2, 1],
       },
     },
   },
   scaleUp: {
-    hidden: { opacity: 0, scale: 0.9 },
+    hidden: { opacity: 0, scale: 0.95 },
     visible: {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.6,
-        ease: [0.25, 0.1, 0.25, 1],
+        duration: 0.5,
+        ease: [0.4, 0, 0.2, 1],
       },
     },
   },
@@ -105,7 +105,7 @@ export default function ScrollAnimate({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={finalVariants}
       className={className}
     >
